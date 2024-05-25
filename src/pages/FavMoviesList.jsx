@@ -10,8 +10,13 @@ const FavMoviesList = () => {
     <Container>
       <div className="p-4 min-h-svh h-full">
         <h1 className="text-center text-white font-semibold text-3xl py-4">
-          Movies List
+          Favorite Movies List
         </h1>
+        {favMovies.length === 0 && (
+          <h2 className="text-white font-semibold text-center text-2xl py-5">
+            Favorite Movie is Empty
+          </h2>
+        )}
         <GridContainer>
           {favMovies?.map((movie, idx) => (
             <MovieCard key={movie.id} {...movie} />

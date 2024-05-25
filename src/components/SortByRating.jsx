@@ -5,9 +5,9 @@ const LOWEST = "lowest";
 
 const SortByRating = ({ sortOption, setSortOption }) => {
   return (
-    <div className="flex items-center gap-4">
-      <p className="text-white font-semibold">Sort By Rating :</p>
-      <div className="text-white flex items-center gap-4">
+    <div className="flex items-center gap-2">
+      <p className="text-white  font-semibold">Sort By Rating :</p>
+      <div className="text-white flex items-center gap-2">
         <label>
           <input
             className="cursor-pointer "

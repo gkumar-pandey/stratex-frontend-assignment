@@ -1,5 +1,6 @@
 import { createAction, createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { fetchMoviesService } from "../../services/fetchMovies";
+import toast from "react-hot-toast";
 
 const initialState = {
   movies: [],
@@ -19,11 +20,13 @@ const movieSlice = createSlice({
   reducers: {
     addMovieToFavorite: (state, action) => {
       state.favMovies = [...state.favMovies, action.payload];
+      toast.success("Movie Add To Favorite");
     },
     removeMovieFromFavorite: (state, action) => {
       state.favMovies = state.favMovies.filter(
         (movie, idx) => movie.id !== action.payload
       );
+      toast.success("Movie Removed From Favorite");
     },
   },
   extraReducers: (builder) => {

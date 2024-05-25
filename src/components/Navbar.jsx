@@ -16,7 +16,7 @@ const Navbar = () => {
     { link: "/favorite", text: "Favorite Movies" },
   ];
   return (
-    <nav className="py-2 border-b border-slate-600 sticky top-0 w-full  ">
+    <nav className="p-2 z-10 sticky top-0 bg-opacity-10 backdrop-filter backdrop-blur-md text-[var(--white)] shadow-md border-b border-slate-500">
       <Container>
         <div className="flex items-center  justify-between p-4 text-white">
           <h3 className="text-xl font-semibold">Movies</h3>

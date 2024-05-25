@@ -20,7 +20,7 @@ const MovieCard = (props) => {
   };
   return (
     <>
-      <div className="border relative  p-4 border-gray-500 rounded-md bg-[var(secondary-bg)] text-white w-72 bg-base-100 shadow-xl">
+      <div className="  max-w-[400px]  border relative overflow-hidden h-full flex flex-col gap-4 border-[#3f3f4666]  p-6 rounded-md bg-[var(secondary-bg)] text-white w-full bg-base-100 shadow-xl">
         <img src={image} alt={movie} />
 
         <div className="card-body">

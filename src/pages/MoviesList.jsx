@@ -24,7 +24,7 @@ const MoviesList = () => {
     <>
       <Container>
         <div className="p-4 min-h-svh h-full">
-          <div className="flex items-center justify-between">
+          <div className="flex items-center flex-row flex-wrap xs:justify-center justify-between">
             <h1 className="text-center text-white font-semibold text-3xl py-4">
               Movies List
             </h1>
