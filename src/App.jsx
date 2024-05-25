@@ -1,9 +1,20 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
+import { FavMoviesList, MoviesList } from "./pages";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <>
-      <div></div>
+      <main className="w-full h-full bg-[var(--primary-bg)] p-2">
+        <BrowserRouter>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<MoviesList />} />
+            <Route path="/favorite" element={<FavMoviesList />} />
+          </Routes>
+        </BrowserRouter>
+      </main>
     </>
   );
 }

@@ -20,6 +20,11 @@ const movieSlice = createSlice({
     addMovieToFavorite: (state, action) => {
       state.favMovies = [...state.favMovies, action.payload];
     },
+    removeMovieFromFavorite: (state, action) => {
+      state.favMovies = state.favMovies.filter(
+        (movie, idx) => movie.id !== action.payload
+      );
+    },
   },
   extraReducers: (builder) => {
     builder.addCase(fetchMovies.pending, (state, action) => {
@@ -37,5 +42,6 @@ const movieSlice = createSlice({
   },
 });
 
-export const { addMovieToFavorite } = movieSlice.actions;
+export const { addMovieToFavorite, removeMovieFromFavorite } =
+  movieSlice.actions;
 export default movieSlice.reducer;
