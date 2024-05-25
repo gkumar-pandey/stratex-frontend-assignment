@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --primary-bg: #211f23;
+  --secondary-bg: #18181b;
+  --white: #ffffff;
+}
