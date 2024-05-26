@@ -1,3 +1,7 @@
+![](./public/app-demo.png)
+
+# [Demo Video Link](https://www.awesomescreenshot.com/video/28027993?key=38251b8c1aff6af70d209f6aa9fa813b)
+
 # Getting Started
 
 - Clone the repository on your local machine with the comman below in your terminal and cd into **stratex-frontend-assignment**
